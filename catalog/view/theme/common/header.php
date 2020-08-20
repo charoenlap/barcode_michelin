@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title></title>
+		<title>Michelin Barcode</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
 		<meta content="" name="description">
 		<meta content="" name="author">
@@ -22,7 +22,7 @@
 		
 	</head>
 	<body class="dark-sidenav">
-		<?php if(get('route')!='home'){ ?>
+		<?php if(get('route')!='home' AND get('route')!=''){ ?>
 		<!-- Left Sidenav -->
 		<div class="left-sidenav">
 			<!-- LOGO -->
@@ -44,6 +44,12 @@
 						</a>
 					</li>
 					<li>
+						<a href="<?php echo route('barcode/association'); ?>">
+							<i data-feather="home" class="align-self-center menu-icon"></i>
+							<span>Barcode Association</span>
+						</a>
+					</li>
+					<li>
 						<a href="javascript: void(0);">
 							<i data-feather="grid" class="align-self-center menu-icon">
 							</i>
@@ -58,7 +64,62 @@
 									<i class="ti-control-record"></i>List 
 								</a>
 							</li>
+							<li>
+								<a href="<?php echo route('barcode/listGroup'); ?>">
+									<i class="ti-control-record"></i>List Group
+								</a>
+							</li>
+							<li>
+								<a href="<?php echo route('purchase'); ?>">
+									<i class="ti-control-record"></i>Add (Purchease)
+								</a>
+							</li>
 						</ul>
+					</li>
+					<li>
+						<a href="javascript: void(0);">
+							<i data-feather="grid" class="align-self-center menu-icon">
+							</i>
+							<span>Product</span>
+							<span class="menu-arrow">
+								<i class="mdi mdi-chevron-right"></i>
+							</span>
+						</a>
+						<ul class="nav-second-level" aria-expanded="false">
+							<li>
+								<a href="#">
+									<i class="ti-control-record"></i>Import product 
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript: void(0);">
+							<i data-feather="grid" class="align-self-center menu-icon">
+							</i>
+							<span>User</span>
+							<span class="menu-arrow">
+								<i class="mdi mdi-chevron-right"></i>
+							</span>
+						</a>
+						<ul class="nav-second-level" aria-expanded="false">
+							<li>
+								<a href="#">
+									<i class="ti-control-record"></i>List 
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="ti-control-record"></i>User group 
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="<?php echo route('setting'); ?>">
+							<i data-feather="lock" class="align-self-center menu-icon"></i>
+							<span>Setting</span>
+						</a>
 					</li>
 					<hr class="hr-dashed hr-menu">
 				</ul>
