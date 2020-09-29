@@ -15,7 +15,7 @@
 					<div class="col-12">
 						<label class="mb-2">ตั้งค่าให้ข้ามได้กี่ดวง ถึงจะแจ้งเตือน</label>
 						<div class="">
-							<input type="text" class="form-control" name="" value="50">
+							<input type="text" class="form-control" name="" value="0">
 						</div>
 					</div>
 				</div>
@@ -29,10 +29,10 @@
 								</tr>
 							</thead>
 							<tbody>
-								<?php for ($i=205;$i<=210;$i++) { ?>
+								<?php foreach ($listPrefixBarcode as $val) { ?>
 								<tr>
-									<td><input type="text" class="form-control" name="barcode_start" value="105"></td>
-									<td><input type="text" class="form-control" name="barcode_start" value="205"></td>
+									<td><input type="text" class="form-control" name="barcode_size" value="<?php echo $val['size_product_code']; ?>"></td>
+									<td><input type="text" class="form-control" name="barcode_end" value="<?php echo $val['group_code']; ?>"></td>
 								</tr>
 								<?php } ?>
 							</tbody>

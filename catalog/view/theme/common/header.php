@@ -19,6 +19,19 @@
 		<link href="assets/plugins/daterangepicker/daterangepicker.css" rel="stylesheet" type="text/css">
 		<link href="assets/plugins/select2/select2.min.css" rel="stylesheet" type="text/css">
 		<link href="assets/css/app.min.css" rel="stylesheet" type="text/css">
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/bootstrap.bundle.min.js"></script>
+		<script src="assets/js/metismenu.min.js"></script>
+		<!-- <script src="assets/js/waves.js"></script> -->
+		<script src="assets/js/feather.min.js"></script>
+		<script src="assets/js/simplebar.min.js"></script>
+		<script src="assets/js/jquery-ui.min.js"></script>
+		<script src="assets/js/moment.js"></script>
+		<script src="assets/plugins/daterangepicker/daterangepicker.js"></script>
+		<script src="assets/plugins/select2/select2.min.js"></script>
+
+		<!-- <script src="assets/pages/jquery.forms-advanced.js"></script> -->
 		
 	</head>
 	<body class="dark-sidenav">
@@ -76,7 +89,7 @@
 							</li>
 						</ul>
 					</li>
-					<li>
+					<!-- <li>
 						<a href="javascript: void(0);">
 							<i data-feather="grid" class="align-self-center menu-icon">
 							</i>
@@ -92,7 +105,7 @@
 								</a>
 							</li>
 						</ul>
-					</li>
+					</li> -->
 					<li>
 						<a href="javascript: void(0);">
 							<i data-feather="grid" class="align-self-center menu-icon">
@@ -104,22 +117,43 @@
 						</a>
 						<ul class="nav-second-level" aria-expanded="false">
 							<li>
-								<a href="#">
+								<a href="<?php echo route('user'); ?>">
 									<i class="ti-control-record"></i>List 
 								</a>
 							</li>
 							<li>
-								<a href="#">
-									<i class="ti-control-record"></i>User group 
+								<a href="<?php echo route('user/group'); ?>">
+									<i class="ti-control-record"></i># User group 
 								</a>
 							</li>
 						</ul>
 					</li>
 					<li>
-						<a href="<?php echo route('setting'); ?>">
-							<i data-feather="lock" class="align-self-center menu-icon"></i>
-							<span>Setting</span>
+						<a href="javascript: void(0);">
+							<i data-feather="grid" class="align-self-center menu-icon">
+							</i>
+							<span>Config</span>
+							<span class="menu-arrow">
+								<i class="mdi mdi-chevron-right"></i>
+							</span>
 						</a>
+						<ul class="nav-second-level" aria-expanded="false">
+							<li>
+								<a href="<?php echo route('setting'); ?>">
+									<i class="ti-control-record"></i># Setting 
+								</a>
+							</li>
+							<li>
+								<a href="<?php echo route(''); ?>">
+									<i class="ti-control-record"></i># Backup DB
+								</a>
+							</li>
+							<li>
+								<a href="<?php echo route('config/update'); ?>">
+									<i class="ti-control-record"></i>Update Software
+								</a>
+							</li>
+						</ul>
 					</li>
 					<hr class="hr-dashed hr-menu">
 				</ul>

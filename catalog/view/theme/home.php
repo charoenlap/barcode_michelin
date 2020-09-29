@@ -22,7 +22,7 @@
 							<!-- Tab panes -->
 							<div class="tab-content">
 								<div class="tab-pane active p-3 pt-3" id="LogIn_Tab" role="tabpanel">
-									<form class="form-horizontal auth-form my-4" action="#" method="GET">
+									<form class="form-horizontal auth-form my-4" action="<?php echo $action; ?>" method="POST">
 										<div class="form-group">
 											<label for="username">Username</label>
 											<div class="input-group mb-3">
@@ -42,7 +42,7 @@
 												<!-- <button class="btn btn-primary btn-block waves-effect waves-light" type="submit">Log In <i class="fas fa-sign-in-alt ml-1">
 												</i>
 												</button> -->
-												<button class="btn btn-primary btn-block waves-effect waves-light" type="button" onclick="window.location='<?php echo route('dashboard');?>'">Log In <i class="fas fa-sign-in-alt ml-1">
+												<button class="btn btn-primary btn-block waves-effect waves-light" type="submit">Log In <i class="fas fa-sign-in-alt ml-1">
 												</i>
 												</button>
 											</div>

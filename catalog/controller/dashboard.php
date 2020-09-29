@@ -2,6 +2,7 @@
 	class DashboardController extends Controller {
 	    public function index() {
 	    	$data = array();
+	    	// echo getSession('id_user').'<';exit();
 	    	// $user = $this->call('User')->login();
 	    	// $data['user'] = $user;
 	    	$data = array();

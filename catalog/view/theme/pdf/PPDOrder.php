@@ -47,30 +47,7 @@
 	</div>
 	<div class="row">
 		<div class="col-6">
-			<table class="table">
-				<tr>
-					<td>No.</td>
-					<td>Start</td>
-					<td>End</td>
-					<td>Count.</td>
-				</tr>
-				<tr>
-					<td>1</td>
-					<td>17100000</td>
-					<td>17117999</td>
-					<td>18000</td>
-				</tr>
-			</table>
-		</div>
-		<div class="col-6">
-			<table class="table">
-				<tr>
-					<td>No.</td>
-					<td>Start</td>
-					<td>End</td>
-					<td>Count.</td>
-				</tr>
-			</table>
+			{$row_data}
 		</div>
 	</div>
 </div>
